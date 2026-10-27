@@ -10,6 +10,14 @@
 /* Mejoras V1.1 */
 .shell{max-width:1600px;padding-left:clamp(18px,3vw,48px);padding-right:clamp(18px,3vw,48px)}
 body{font-size:16px;line-height:1.65}.hero{grid-template-columns:minmax(0,1fr) 330px;padding-top:64px;padding-bottom:44px}.hero p{font-size:16px}.hero h1{font-size:clamp(42px,4.7vw,75px)}.tile p,.archive p,.note p{font-size:14px}.status dt,.status dd{font-size:13px}.nav a{font-size:12px}.heading h2{font-size:24px}.section{padding-top:35px;padding-bottom:35px}.tile{min-height:184px}.brand-logo{width:62px;height:62px;object-fit:cover;object-position:center;border-radius:50%;border:1px solid #a9884b;box-shadow:0 0 18px #4dd4df20}.brand strong{font-size:19px}.brand small{font-size:11px}.map img{aspect-ratio:3/2;object-fit:contain;background:#02090e}.roster-bar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:15px}.roster-bar p{color:var(--muted);font-size:14px;margin:10px 0 0}.roster-count{font-size:13px;color:var(--gold);white-space:nowrap}.player h3{font-size:20px}.player p{font-size:14px}.list-dialog{width:min(900px,95vw);max-height:90vh;padding:25px}.list-meta{color:var(--cyan);margin-bottom:15px}.list-body{white-space:pre-wrap;overflow-wrap:anywhere;background:#030b10;border:1px solid var(--line);padding:18px;max-height:55vh;overflow:auto;color:#dce9eb;font:14px/1.6 ui-monospace,Consolas,monospace}.list-dialog .actions{margin-top:16px}@media(max-width:1000px){.hero{grid-template-columns:1fr}.brand-logo{width:50px;height:50px}}@media(max-width:700px){.shell{padding-left:15px;padding-right:15px}.roster-bar{align-items:flex-start;flex-direction:column}.heading h2{font-size:19px}.hero h1{font-size:38px}.tile{min-height:158px}.brand strong{font-size:16px}.tools select{flex:1;min-width:140px}.hero{padding-top:32px}}
+
+/* V1.4: tarjetas de comandantes con insignias de facción */
+.players{grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.player{min-height:166px;padding:15px;background:linear-gradient(105deg,#0a1b23eb,#07141cf0),radial-gradient(circle at 85% 10%,#27505a30,transparent 65%)}
+.player-top{display:flex;gap:13px;align-items:center;min-width:0;margin-bottom:10px}
+.faction-icon{width:76px;height:76px;object-fit:cover;flex:none;border:1px solid #36717b;background:#08151c;box-shadow:0 0 12px #00e0ff12}
+.player-ident{min-width:0}.player h3{font-size:17px;line-height:1.25;overflow-wrap:anywhere}.player p{font-size:12px;margin:6px 0 0;color:#a8c3c9}.faction-name{display:inline-block;color:var(--gold);border:1px solid #8c704750;padding:3px 8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px}.faction-name.unknown{color:#bdc7cc;border-color:#4b6874}.player .tag{display:inline-flex;align-items:center;gap:6px;font-size:10px}
+@media(max-width:1250px){.players{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:900px){.players{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.players{grid-template-columns:1fr}.faction-icon{width:68px;height:68px}}
 </style>
 </head>
 <body>
@@ -40,15 +48,7 @@ const listClose=document.getElementById('closeList');
 let listTrigger=null;
 function closeList(){listModal.classList.remove('show');listModal.setAttribute('aria-hidden','true');if(listTrigger)listTrigger.focus();}
 function openList(x,button){listTrigger=button;document.getElementById('listTitle').textContent=x.nombre+' · '+x.faccion;document.getElementById('listMeta').textContent='Etapa '+x.etapa+' · Ronda '+x.ronda+' · '+(x.puntos||'')+' puntos';document.getElementById('listBody').textContent=x.lista||'Lista disponible en el documento original.';const original=document.getElementById('originalList');const url=typeof x.url==='string'?x.url:'';original.hidden=!/^https:\/\//.test(url);if(!original.hidden)original.href=url;listModal.classList.add('show');listModal.setAttribute('aria-hidden','false');listClose.focus();}
-const COMANDANTES=[
-  {id:71803,nombre:'ArgosWH'}, {id:71805,nombre:'Vozzloo'},
-  {id:71823,nombre:'Overlordhobbystudio'}, {id:71826,nombre:'DonDiego'},
-  {id:71828,nombre:'LordCommander'}, {id:71830,nombre:'IMONKEY'},
-  {id:71833,nombre:'Wizard Izzet'}, {id:71834,nombre:'DavidTheGreen'},
-  {id:71836,nombre:'Pipe004'}, {id:72832,nombre:'Kristoffer Espinoza'},
-  {id:72859,nombre:'Infante'}, {id:72882,nombre:'s3pt1muz'},
-  {id:72863,nombre:'jack1989'}, {id:72865,nombre:'Aristo Plays'}
-];
+const COMANDANTES=[{"nombre": "ArgosWH", "id": 71803, "faccion": "Chaos Knights", "icono": "chaos-knights"}, {"nombre": "Vozzloo", "id": 71805, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Overlordhobbystudio", "id": 71823, "faccion": "Adeptus Mechanicus", "icono": "adeptus-mechanicus"}, {"nombre": "DonDiego", "id": 71826, "faccion": "Orks", "icono": "orks"}, {"nombre": "LordCommander", "id": 71828, "faccion": "Blood Angels", "icono": "blood-angels"}, {"nombre": "IMONKEY", "id": 71830, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Wizard Izzet", "id": 71833, "faccion": "Imperial Fists", "icono": "imperial-fists"}, {"nombre": "DavidTheGreen", "id": 71834, "faccion": "Black Templars", "icono": "black-templars"}, {"nombre": "Pipe004", "id": 71836, "faccion": "Orks", "icono": "orks"}, {"nombre": "Kristoffer Espinoza", "id": 72832, "faccion": "Raven Guard", "icono": "raven-guard"}, {"nombre": "Infante", "id": 72859, "faccion": "Emperor's Children", "icono": "emperors-children"}, {"nombre": "s3pt1muz", "id": 72882, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "jack1989", "id": 72863, "faccion": "Chaos Space Marines", "icono": "chaos-space-marines"}, {"nombre": "Aristo Plays", "id": 72865, "faccion": "Space Marines", "icono": "space-marines"}];
 function renderPlayers(){
   const term=document.getElementById('search').value.trim().toLocaleLowerCase('es');
   const stage=document.getElementById('stage').value;
@@ -57,14 +57,19 @@ function renderPlayers(){
   const visible=COMANDANTES.map(c=>{
     const published=LISTAS_PUBLICADAS.filter(x=>(String(x.id)===String(c.id)||x.nombre.toLocaleLowerCase('es')===c.nombre.toLocaleLowerCase('es'))&&(stage==='all'||String(x.etapa)===stage)&&(round==='all'||String(x.ronda)===round));
     return {...c,published};
-  }).filter(c=>`${c.nombre} ${c.published.map(x=>x.faccion).join(' ')}`.toLocaleLowerCase('es').includes(term));
+  }).filter(c=>`${c.nombre} ${c.faccion} ${c.published.map(x=>x.faccion).join(' ')}`.toLocaleLowerCase('es').includes(term));
   document.getElementById('rosterCount').textContent=COMANDANTES.length+' comandantes registrados · '+LISTAS_PUBLICADAS.length+' listas publicadas';
   if(!visible.length){const e=document.createElement('div');e.className='empty';e.textContent='No se encontraron comandantes con ese nombre o facción.';e.style.gridColumn='1/-1';list.append(e);return;}
   for(const c of visible){
     const card=document.createElement('article');card.className='panel player';
+    const top=document.createElement('div');top.className='player-top';
+    const icon=document.createElement('img');icon.className='faction-icon';icon.src='assets/facciones/'+c.icono+'.png';icon.alt='Insignia ilustrativa: '+c.faccion;icon.loading='lazy';
+    const ident=document.createElement('div');ident.className='player-ident';
     const title=document.createElement('h3');title.textContent=c.nombre;
-    const detail=document.createElement('p');detail.textContent='Longshanks #'+c.id+' · '+(c.published.length===1?c.published[0].faccion:'Facción por confirmar');
-    card.append(title,detail);
+    const detail=document.createElement('p');detail.textContent='Longshanks #'+c.id;
+    ident.append(title,detail);top.append(icon,ident);
+    const faction=document.createElement('span');faction.className='faction-name'+(c.faccion==='Por confirmar'?' unknown':'');faction.textContent=c.faccion;
+    card.append(top,faction,document.createElement('br'));
     if(!c.published.length){const label=document.createElement('span');label.className='tag';label.textContent='Lista aún no publicada';card.append(label);}
     else for(const x of c.published){const button=document.createElement('button');button.className='btn';button.type='button';button.textContent='Ver lista · E'+x.etapa+' R'+x.ronda+' →';button.addEventListener('click',()=>openList(x,button));card.append(button);}
     list.append(card);

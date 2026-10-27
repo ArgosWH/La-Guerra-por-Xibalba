@@ -1,72 +1,86 @@
 [
   {
-    "id": 71803,
     "nombre": "ArgosWH",
-    "faccion": "Por confirmar"
+    "id": 71803,
+    "faccion": "Chaos Knights",
+    "icono": "chaos-knights"
   },
   {
-    "id": 71805,
     "nombre": "Vozzloo",
-    "faccion": "Por confirmar"
+    "id": 71805,
+    "faccion": "Por confirmar",
+    "icono": "desconocida"
   },
   {
-    "id": 71823,
     "nombre": "Overlordhobbystudio",
-    "faccion": "Por confirmar"
+    "id": 71823,
+    "faccion": "Adeptus Mechanicus",
+    "icono": "adeptus-mechanicus"
   },
   {
-    "id": 71826,
     "nombre": "DonDiego",
-    "faccion": "Por confirmar"
+    "id": 71826,
+    "faccion": "Orks",
+    "icono": "orks"
   },
   {
-    "id": 71828,
     "nombre": "LordCommander",
-    "faccion": "Por confirmar"
+    "id": 71828,
+    "faccion": "Blood Angels",
+    "icono": "blood-angels"
   },
   {
-    "id": 71830,
     "nombre": "IMONKEY",
-    "faccion": "Por confirmar"
+    "id": 71830,
+    "faccion": "Por confirmar",
+    "icono": "desconocida"
   },
   {
-    "id": 71833,
     "nombre": "Wizard Izzet",
-    "faccion": "Por confirmar"
+    "id": 71833,
+    "faccion": "Imperial Fists",
+    "icono": "imperial-fists"
   },
   {
-    "id": 71834,
     "nombre": "DavidTheGreen",
-    "faccion": "Por confirmar"
+    "id": 71834,
+    "faccion": "Black Templars",
+    "icono": "black-templars"
   },
   {
-    "id": 71836,
     "nombre": "Pipe004",
-    "faccion": "Por confirmar"
+    "id": 71836,
+    "faccion": "Orks",
+    "icono": "orks"
   },
   {
-    "id": 72832,
     "nombre": "Kristoffer Espinoza",
-    "faccion": "Por confirmar"
+    "id": 72832,
+    "faccion": "Raven Guard",
+    "icono": "raven-guard"
   },
   {
-    "id": 72859,
     "nombre": "Infante",
-    "faccion": "Por confirmar"
+    "id": 72859,
+    "faccion": "Emperor's Children",
+    "icono": "emperors-children"
   },
   {
-    "id": 72882,
     "nombre": "s3pt1muz",
-    "faccion": "Por confirmar"
+    "id": 72882,
+    "faccion": "Por confirmar",
+    "icono": "desconocida"
   },
   {
-    "id": 72863,
     "nombre": "jack1989",
-    "faccion": "Por confirmar"
+    "id": 72863,
+    "faccion": "Chaos Space Marines",
+    "icono": "chaos-space-marines"
   },
   {
-    "id": 72865,
     "nombre": "Aristo Plays",
-    "faccion": "Por confirmar"
+    "id": 72865,
+    "faccion": "Space Marines",
+    "icono": "space-marines"
   }
 ]

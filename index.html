@@ -63,7 +63,7 @@ function renderPlayers(){
   for(const c of visible){
     const card=document.createElement('article');card.className='panel player';
     const top=document.createElement('div');top.className='player-top';
-    const icon=document.createElement('img');icon.className='faction-icon';icon.src='assets/facciones/'+c.icono+'.png';icon.alt='Insignia ilustrativa: '+c.faccion;icon.loading='lazy';
+    const icon=document.createElement('img');icon.className='faction-icon';icon.src='assets/facciones/'+c.icono+'.svg';icon.alt='Insignia ilustrativa: '+c.faccion;icon.loading='lazy';
     const ident=document.createElement('div');ident.className='player-ident';
     const title=document.createElement('h3');title.textContent=c.nombre;
     const detail=document.createElement('p');detail.textContent='Longshanks #'+c.id;

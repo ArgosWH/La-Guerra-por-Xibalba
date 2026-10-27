@@ -18,6 +18,9 @@ body{font-size:16px;line-height:1.65}.hero{grid-template-columns:minmax(0,1fr) 3
 .faction-icon{width:76px;height:76px;object-fit:cover;flex:none;border:1px solid #36717b;background:#08151c;box-shadow:0 0 12px #00e0ff12}
 .player-ident{min-width:0}.player h3{font-size:17px;line-height:1.25;overflow-wrap:anywhere}.player p{font-size:12px;margin:6px 0 0;color:#a8c3c9}.faction-name{display:inline-block;color:var(--gold);border:1px solid #8c704750;padding:3px 8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px}.faction-name.unknown{color:#bdc7cc;border-color:#4b6874}.player .tag{display:inline-flex;align-items:center;gap:6px;font-size:10px}
 @media(max-width:1250px){.players{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:900px){.players{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.players{grid-template-columns:1fr}.faction-icon{width:68px;height:68px}}
+
+/* Emblemas externos completos: sin recortes ni números; proporciones intactas. */
+.faction-icon{width:72px;height:72px;object-fit:contain;object-position:center;padding:8px;box-sizing:border-box;background:#07171e;border:1px solid #2d5b67;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -48,6 +51,7 @@ const listClose=document.getElementById('closeList');
 let listTrigger=null;
 function closeList(){listModal.classList.remove('show');listModal.setAttribute('aria-hidden','true');if(listTrigger)listTrigger.focus();}
 function openList(x,button){listTrigger=button;document.getElementById('listTitle').textContent=x.nombre+' · '+x.faccion;document.getElementById('listMeta').textContent='Etapa '+x.etapa+' · Ronda '+x.ronda+' · '+(x.puntos||'')+' puntos';document.getElementById('listBody').textContent=x.lista||'Lista disponible en el documento original.';const original=document.getElementById('originalList');const url=typeof x.url==='string'?x.url:'';original.hidden=!/^https:\/\//.test(url);if(!original.hidden)original.href=url;listModal.classList.add('show');listModal.setAttribute('aria-hidden','false');listClose.focus();}
+const LOGOS_REALES={"chaos-knights": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Star_of_Chaos_Warhammer.svg", "adeptus-mechanicus": "https://40k.gallery/download-img.php?cat=7&type=svg", "orks": "https://40k.gallery/download-img.php?cat=61&type=svg", "blood-angels": "https://40k.gallery/download-img.php?tag=947&type=svg", "imperial-fists": "https://40k.gallery/download-img.php?tag=949&type=svg", "black-templars": "https://40k.gallery/download-img.php?tag=1041&type=svg", "raven-guard": "https://40k.gallery/download-img.php?tag=1035&type=svg", "emperors-children": "https://40k.gallery/download-img.php?tag=1077&type=svg", "chaos-space-marines": "https://40k.gallery/download-img.php?cat=9&type=svg", "space-marines": "https://40k.gallery/download-img.php?cat=4&type=svg"};
 const COMANDANTES=[{"nombre": "ArgosWH", "id": 71803, "faccion": "Chaos Knights", "icono": "chaos-knights"}, {"nombre": "Vozzloo", "id": 71805, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Overlordhobbystudio", "id": 71823, "faccion": "Adeptus Mechanicus", "icono": "adeptus-mechanicus"}, {"nombre": "DonDiego", "id": 71826, "faccion": "Orks", "icono": "orks"}, {"nombre": "LordCommander", "id": 71828, "faccion": "Blood Angels", "icono": "blood-angels"}, {"nombre": "IMONKEY", "id": 71830, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Wizard Izzet", "id": 71833, "faccion": "Imperial Fists", "icono": "imperial-fists"}, {"nombre": "DavidTheGreen", "id": 71834, "faccion": "Black Templars", "icono": "black-templars"}, {"nombre": "Pipe004", "id": 71836, "faccion": "Orks", "icono": "orks"}, {"nombre": "Kristoffer Espinoza", "id": 72832, "faccion": "Raven Guard", "icono": "raven-guard"}, {"nombre": "Infante", "id": 72859, "faccion": "Emperor's Children", "icono": "emperors-children"}, {"nombre": "s3pt1muz", "id": 72882, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "jack1989", "id": 72863, "faccion": "Chaos Space Marines", "icono": "chaos-space-marines"}, {"nombre": "Aristo Plays", "id": 72865, "faccion": "Space Marines", "icono": "space-marines"}];
 function renderPlayers(){
   const term=document.getElementById('search').value.trim().toLocaleLowerCase('es');
@@ -63,7 +67,10 @@ function renderPlayers(){
   for(const c of visible){
     const card=document.createElement('article');card.className='panel player';
     const top=document.createElement('div');top.className='player-top';
-    const icon=document.createElement('img');icon.className='faction-icon';icon.src='assets/facciones/'+c.icono+'.svg';icon.alt='Insignia ilustrativa: '+c.faccion;icon.loading='lazy';
+    const icon=document.createElement('img');icon.className='faction-icon';
+    icon.src=LOGOS_REALES[c.icono]||('assets/facciones/'+c.icono+'.svg');
+    icon.alt='Símbolo de '+c.faccion;icon.loading='lazy';icon.referrerPolicy='no-referrer';
+    icon.addEventListener('error',()=>{const fallback='assets/facciones/'+c.icono+'.svg';if(!icon.src.endsWith(fallback))icon.src=fallback;});
     const ident=document.createElement('div');ident.className='player-ident';
     const title=document.createElement('h3');title.textContent=c.nombre;
     const detail=document.createElement('p');detail.textContent='Longshanks #'+c.id;
@@ -80,4 +87,5 @@ fetch('assets/listas-publicadas.json',{cache:'no-store'}).then(r=>{if(!r.ok)thro
 listClose.addEventListener('click',closeList);listModal.addEventListener('click',e=>{if(e.target===listModal)closeList();});document.getElementById('copyList').addEventListener('click',()=>{const value=document.getElementById('listBody').textContent;navigator.clipboard?.writeText(value).then(()=>{const b=document.getElementById('copyList');b.textContent='Copiado ✓';setTimeout(()=>b.textContent='Copiar lista',1600);}).catch(()=>{});});
 const modal=document.getElementById('mapModal'),opener=document.getElementById('openMap'),closer=document.getElementById('closeMap');function closeModal(){modal.classList.remove('show');modal.setAttribute('aria-hidden','true');opener.focus();}opener.addEventListener('click',()=>{modal.classList.add('show');modal.setAttribute('aria-hidden','false');closer.focus();});closer.addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(modal.classList.contains('show'))closeModal();if(listModal.classList.contains('show'))closeList();}});
 </script>
+<footer style="max-width:1400px;margin:35px auto 25px;padding:12px 20px;font:11px/1.6 sans-serif;color:#8b9ca4;text-align:center">Emblemas: <a href="https://40k.gallery/warhammer-40k-svg-icons/" target="_blank" rel="noopener noreferrer" style="color:#72c9d2">40K Gallery</a> (arte de fans; marcas de Games Workshop). Chaos Knights usa provisionalmente la estrella genérica del Caos de Wikimedia Commons. Sitio comunitario no afiliado a Games Workshop.</footer>
 </body></html>

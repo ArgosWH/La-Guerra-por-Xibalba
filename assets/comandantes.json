@@ -14,8 +14,8 @@
   {
     "nombre": "Overlordhobbystudio",
     "id": 71823,
-    "faccion": "Adeptus Mechanicus",
-    "icono": "adeptus-mechanicus"
+    "faccion": "World Eaters",
+    "icono": "world-eaters"
   },
   {
     "nombre": "DonDiego",
@@ -30,7 +30,7 @@
     "icono": "blood-angels"
   },
   {
-    "nombre": "IMONKEY",
+    "nombre": "TMONKEY",
     "id": 71830,
     "faccion": "Por confirmar",
     "icono": "desconocida"
@@ -38,8 +38,8 @@
   {
     "nombre": "Wizard Izzet",
     "id": 71833,
-    "faccion": "Imperial Fists",
-    "icono": "imperial-fists"
+    "faccion": "Adeptus Custodes",
+    "icono": "adeptus-custodes"
   },
   {
     "nombre": "DavidTheGreen",
@@ -56,14 +56,14 @@
   {
     "nombre": "Kristoffer Espinoza",
     "id": 72832,
-    "faccion": "Raven Guard",
-    "icono": "raven-guard"
+    "faccion": "Space Wolves",
+    "icono": "space-wolves"
   },
   {
     "nombre": "Infante",
     "id": 72859,
-    "faccion": "Emperor's Children",
-    "icono": "emperors-children"
+    "faccion": "Tyranids",
+    "icono": "tyranids"
   },
   {
     "nombre": "s3pt1muz",
@@ -80,7 +80,7 @@
   {
     "nombre": "Aristo Plays",
     "id": 72865,
-    "faccion": "Space Marines",
-    "icono": "space-marines"
+    "faccion": "Grey Knights",
+    "icono": "grey-knights"
   }
 ]

@@ -21,6 +21,25 @@ body{font-size:16px;line-height:1.65}.hero{grid-template-columns:minmax(0,1fr) 3
 
 /* Emblemas externos completos: sin recortes ni números; proporciones intactas. */
 .faction-icon{width:72px;height:72px;object-fit:contain;object-position:center;padding:8px;box-sizing:border-box;background:#07171e;border:1px solid #2d5b67;flex-shrink:0}
+/* V1.8: símbolos externos monocromáticos convertidos a colores visibles. */
+.faction-icon{background:#0b2029;border-color:#47727b;filter:none;}
+.faction-icon[data-faction="chaos-knights"]{filter:invert(76%) sepia(48%) saturate(550%) hue-rotate(348deg) brightness(111%);}
+.faction-icon[data-faction="adeptus-mechanicus"]{filter:invert(30%) sepia(94%) saturate(2000%) hue-rotate(338deg) brightness(115%);}
+.faction-icon[data-faction="orks"]{filter:invert(72%) sepia(73%) saturate(690%) hue-rotate(35deg) brightness(110%);}
+.faction-icon[data-faction="blood-angels"]{filter:invert(39%) sepia(92%) saturate(1800%) hue-rotate(333deg) brightness(115%);}
+.faction-icon[data-faction="imperial-fists"]{filter:invert(89%) sepia(92%) saturate(1400%) hue-rotate(345deg) brightness(115%);}
+.faction-icon[data-faction="black-templars"]{filter:invert(96%) sepia(8%) saturate(280%) hue-rotate(171deg) brightness(112%);}
+.faction-icon[data-faction="raven-guard"]{filter:invert(79%) sepia(8%) saturate(460%) hue-rotate(172deg) brightness(112%);}
+.faction-icon[data-faction="emperors-children"]{filter:invert(61%) sepia(81%) saturate(1000%) hue-rotate(251deg) brightness(120%);}
+.faction-icon[data-faction="chaos-space-marines"]{filter:invert(61%) sepia(70%) saturate(800%) hue-rotate(329deg) brightness(112%);}
+.faction-icon[data-faction="space-marines"]{filter:invert(64%) sepia(90%) saturate(850%) hue-rotate(165deg) brightness(118%);}
+/* Preserve the cyan unknown shield without recoloring. */
+
+.faction-icon[data-faction="world-eaters"]{filter:none}
+.faction-icon[data-faction="adeptus-custodes"]{filter:none}
+.faction-icon[data-faction="space-wolves"]{filter:none}
+.faction-icon[data-faction="tyranids"]{filter:none}
+.faction-icon[data-faction="grey-knights"]{filter:none}
 </style>
 </head>
 <body>
@@ -52,7 +71,7 @@ let listTrigger=null;
 function closeList(){listModal.classList.remove('show');listModal.setAttribute('aria-hidden','true');if(listTrigger)listTrigger.focus();}
 function openList(x,button){listTrigger=button;document.getElementById('listTitle').textContent=x.nombre+' · '+x.faccion;document.getElementById('listMeta').textContent='Etapa '+x.etapa+' · Ronda '+x.ronda+' · '+(x.puntos||'')+' puntos';document.getElementById('listBody').textContent=x.lista||'Lista disponible en el documento original.';const original=document.getElementById('originalList');const url=typeof x.url==='string'?x.url:'';original.hidden=!/^https:\/\//.test(url);if(!original.hidden)original.href=url;listModal.classList.add('show');listModal.setAttribute('aria-hidden','false');listClose.focus();}
 const LOGOS_REALES={"chaos-knights": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Star_of_Chaos_Warhammer.svg", "adeptus-mechanicus": "https://40k.gallery/download-img.php?cat=7&type=svg", "orks": "https://40k.gallery/download-img.php?cat=61&type=svg", "blood-angels": "https://40k.gallery/download-img.php?tag=947&type=svg", "imperial-fists": "https://40k.gallery/download-img.php?tag=949&type=svg", "black-templars": "https://40k.gallery/download-img.php?tag=1041&type=svg", "raven-guard": "https://40k.gallery/download-img.php?tag=1035&type=svg", "emperors-children": "https://40k.gallery/download-img.php?tag=1077&type=svg", "chaos-space-marines": "https://40k.gallery/download-img.php?cat=9&type=svg", "space-marines": "https://40k.gallery/download-img.php?cat=4&type=svg"};
-const COMANDANTES=[{"nombre": "ArgosWH", "id": 71803, "faccion": "Chaos Knights", "icono": "chaos-knights"}, {"nombre": "Vozzloo", "id": 71805, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Overlordhobbystudio", "id": 71823, "faccion": "Adeptus Mechanicus", "icono": "adeptus-mechanicus"}, {"nombre": "DonDiego", "id": 71826, "faccion": "Orks", "icono": "orks"}, {"nombre": "LordCommander", "id": 71828, "faccion": "Blood Angels", "icono": "blood-angels"}, {"nombre": "IMONKEY", "id": 71830, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Wizard Izzet", "id": 71833, "faccion": "Imperial Fists", "icono": "imperial-fists"}, {"nombre": "DavidTheGreen", "id": 71834, "faccion": "Black Templars", "icono": "black-templars"}, {"nombre": "Pipe004", "id": 71836, "faccion": "Orks", "icono": "orks"}, {"nombre": "Kristoffer Espinoza", "id": 72832, "faccion": "Raven Guard", "icono": "raven-guard"}, {"nombre": "Infante", "id": 72859, "faccion": "Emperor's Children", "icono": "emperors-children"}, {"nombre": "s3pt1muz", "id": 72882, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "jack1989", "id": 72863, "faccion": "Chaos Space Marines", "icono": "chaos-space-marines"}, {"nombre": "Aristo Plays", "id": 72865, "faccion": "Space Marines", "icono": "space-marines"}];
+const COMANDANTES=[{"nombre": "ArgosWH", "id": 71803, "faccion": "Chaos Knights", "icono": "chaos-knights"}, {"nombre": "Vozzloo", "id": 71805, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Overlordhobbystudio", "id": 71823, "faccion": "World Eaters", "icono": "world-eaters"}, {"nombre": "DonDiego", "id": 71826, "faccion": "Orks", "icono": "orks"}, {"nombre": "LordCommander", "id": 71828, "faccion": "Blood Angels", "icono": "blood-angels"}, {"nombre": "TMONKEY", "id": 71830, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "Wizard Izzet", "id": 71833, "faccion": "Adeptus Custodes", "icono": "adeptus-custodes"}, {"nombre": "DavidTheGreen", "id": 71834, "faccion": "Black Templars", "icono": "black-templars"}, {"nombre": "Pipe004", "id": 71836, "faccion": "Orks", "icono": "orks"}, {"nombre": "Kristoffer Espinoza", "id": 72832, "faccion": "Space Wolves", "icono": "space-wolves"}, {"nombre": "Infante", "id": 72859, "faccion": "Tyranids", "icono": "tyranids"}, {"nombre": "s3pt1muz", "id": 72882, "faccion": "Por confirmar", "icono": "desconocida"}, {"nombre": "jack1989", "id": 72863, "faccion": "Chaos Space Marines", "icono": "chaos-space-marines"}, {"nombre": "Aristo Plays", "id": 72865, "faccion": "Grey Knights", "icono": "grey-knights"}];
 function renderPlayers(){
   const term=document.getElementById('search').value.trim().toLocaleLowerCase('es');
   const stage=document.getElementById('stage').value;
@@ -67,7 +86,7 @@ function renderPlayers(){
   for(const c of visible){
     const card=document.createElement('article');card.className='panel player';
     const top=document.createElement('div');top.className='player-top';
-    const icon=document.createElement('img');icon.className='faction-icon';
+    const icon=document.createElement('img');icon.className='faction-icon';icon.dataset.faction=c.icono;
     icon.src=LOGOS_REALES[c.icono]||('assets/facciones/'+c.icono+'.svg');
     icon.alt='Símbolo de '+c.faccion;icon.loading='lazy';icon.referrerPolicy='no-referrer';
     icon.addEventListener('error',()=>{const fallback='assets/facciones/'+c.icono+'.svg';if(!icon.src.endsWith(fallback))icon.src=fallback;});

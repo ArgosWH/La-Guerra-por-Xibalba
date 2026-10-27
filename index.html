@@ -40,6 +40,13 @@ body{font-size:16px;line-height:1.65}.hero{grid-template-columns:minmax(0,1fr) 3
 .faction-icon[data-faction="space-wolves"]{filter:none}
 .faction-icon[data-faction="tyranids"]{filter:none}
 .faction-icon[data-faction="grey-knights"]{filter:none}
+
+/* V2.0: marco oscuro independiente del emblema. Los filtros afectan SOLO al dibujo,
+   nunca al fondo del recuadro; se evitan los bloques fluorescentes. */
+.faction-frame{width:72px;height:72px;flex:none;display:grid;place-items:center;padding:9px;box-sizing:border-box;background:radial-gradient(circle at 50% 42%,#17303b 0%,#081821 68%,#051016 100%);border:1px solid #386774;box-shadow:inset 0 0 0 3px #06131a,0 0 10px #00d9f00b}
+.faction-frame .faction-icon{display:block;width:100%;height:100%;padding:0;border:0;background:transparent;box-shadow:none;object-fit:contain}
+.faction-frame .faction-icon.local-icon{filter:none!important}
+@media(max-width:560px){.faction-frame{width:68px;height:68px}}
 </style>
 </head>
 <body>
@@ -86,14 +93,16 @@ function renderPlayers(){
   for(const c of visible){
     const card=document.createElement('article');card.className='panel player';
     const top=document.createElement('div');top.className='player-top';
+    const frame=document.createElement('span');frame.className='faction-frame';
     const icon=document.createElement('img');icon.className='faction-icon';icon.dataset.faction=c.icono;
+    if(!LOGOS_REALES[c.icono])icon.classList.add('local-icon');
     icon.src=LOGOS_REALES[c.icono]||('assets/facciones/'+c.icono+'.svg');
     icon.alt='Símbolo de '+c.faccion;icon.loading='lazy';icon.referrerPolicy='no-referrer';
-    icon.addEventListener('error',()=>{const fallback='assets/facciones/'+c.icono+'.svg';if(!icon.src.endsWith(fallback))icon.src=fallback;});
+    icon.addEventListener('error',()=>{const fallback='assets/facciones/'+c.icono+'.svg';if(!icon.src.endsWith(fallback)){icon.src=fallback;icon.classList.add('local-icon');}});
     const ident=document.createElement('div');ident.className='player-ident';
     const title=document.createElement('h3');title.textContent=c.nombre;
     const detail=document.createElement('p');detail.textContent='Longshanks #'+c.id;
-    ident.append(title,detail);top.append(icon,ident);
+    ident.append(title,detail);frame.append(icon);top.append(frame,ident);
     const faction=document.createElement('span');faction.className='faction-name'+(c.faccion==='Por confirmar'?' unknown':'');faction.textContent=c.faccion;
     card.append(top,faction,document.createElement('br'));
     if(!c.published.length){const label=document.createElement('span');label.className='tag';label.textContent='Lista aún no publicada';card.append(label);}

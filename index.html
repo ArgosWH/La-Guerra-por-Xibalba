@@ -93,7 +93,7 @@ function renderPlayers(){
   const round=document.getElementById('round').value;
   list.replaceChildren();
   const visible=COMANDANTES.map(c=>{
-    const published=LISTAS_PUBLICADAS.filter(x=>(String(x.id)===String(c.id)||x.nombre.toLocaleLowerCase('es')===c.nombre.toLocaleLowerCase('es'))&&(stage==='all'||String(x.etapa)===stage)&&(round==='all'||String(x.ronda)===round));
+    const published=LISTAS_PUBLICADAS.filter(x=>((x.id!=null&&c.id!=null&&String(x.id)===String(c.id))||x.nombre.toLocaleLowerCase('es')===c.nombre.toLocaleLowerCase('es'))&&(stage==='all'||String(x.etapa)===stage)&&(round==='all'||String(x.ronda)===round));
     return {...c,published};
   }).filter(c=>`${c.nombre} ${c.faccion} ${c.published.map(x=>x.faccion).join(' ')}`.toLocaleLowerCase('es').includes(term));
   document.getElementById('rosterCount').textContent=COMANDANTES.length+' comandantes registrados · '+LISTAS_PUBLICADAS.length+' listas publicadas';

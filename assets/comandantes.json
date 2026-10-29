@@ -8,8 +8,8 @@
   {
     "nombre": "Vozzloo",
     "id": 71805,
-    "faccion": "Por confirmar",
-    "icono": "desconocida"
+    "faccion": "Thousand Sons",
+    "icono": "thousand-sons"
   },
   {
     "nombre": "Overlordhobbystudio",
@@ -32,8 +32,8 @@
   {
     "nombre": "TMONKEY",
     "id": 71830,
-    "faccion": "Por confirmar",
-    "icono": "desconocida"
+    "faccion": "T’au Empire (Kroot)",
+    "icono": "tau-empire"
   },
   {
     "nombre": "Wizard Izzet",
@@ -68,8 +68,8 @@
   {
     "nombre": "s3pt1muz",
     "id": 72882,
-    "faccion": "Por confirmar",
-    "icono": "desconocida"
+    "faccion": "Thousand Sons",
+    "icono": "thousand-sons"
   },
   {
     "nombre": "jack1989",
@@ -82,5 +82,29 @@
     "id": 72865,
     "faccion": "Grey Knights",
     "icono": "grey-knights"
+  },
+  {
+    "nombre": "Carlos Orellana",
+    "id": null,
+    "faccion": "Necrons",
+    "icono": "necrons"
+  },
+  {
+    "nombre": "Flan X Agan",
+    "id": null,
+    "faccion": "Dark Angels",
+    "icono": "dark-angels"
+  },
+  {
+    "nombre": "Gerardo Cruz",
+    "id": null,
+    "faccion": "T’au Empire",
+    "icono": "tau-empire"
+  },
+  {
+    "nombre": "AltairVanRiessen",
+    "id": null,
+    "faccion": "Adepta Sororitas",
+    "icono": "adepta-sororitas"
   }
 ]

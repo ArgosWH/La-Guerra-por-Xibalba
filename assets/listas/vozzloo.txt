@@ -1,0 +1,43 @@
++++++++++++++++++++++++++++++++++++++++++++++++
++ FACTION KEYWORD: Imperium - Adepta Sororitas
++ DETACHMENT: Champions of Faith (Righteous Purpose)
++ FORCE DISPOSITION: Disruption
++ TOTAL ARMY POINTS: 985pts
++
++ WARLORD: Char1: Morvenn Vahl
++ NUMBER OF UNITS: 7
++ SECONDARY: - Bring It Down: (3x2) - Assassination: 1 Characters
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Char1: 1x Morvenn Vahl (215 pts): Warlord, Fidelis, Lance of Illumination, Paragon missile launcher
+Leading Paragon Warsuits
+
+10x Battle Sisters Squad (100 pts)
+• 9x Battle Sister
+    6 with Bolt pistol, Boltgun, Close combat weapon
+    1 with Simulacrum Imperialis, Bolt pistol, Boltgun, Close combat weapon
+    1 with Bolt pistol, Close combat weapon, Multi-melta
+    1 with Bolt pistol, Close combat weapon, Meltagun
+• 1x Sister Superior: Bolt pistol, Close combat weapon, Power weapon, Inferno pistol
+10x Battle Sisters Squad (100 pts)
+• 9x Battle Sister
+    6 with Bolt pistol, Boltgun, Close combat weapon
+    1 with Simulacrum Imperialis, Bolt pistol, Boltgun, Close combat weapon
+    1 with Bolt pistol, Close combat weapon, Multi-melta
+    1 with Bolt pistol, Close combat weapon, Meltagun
+• 1x Sister Superior: Bolt pistol, Close combat weapon, Power weapon, Inferno pistol
+
+1x Exorcist (175 pts): Armoured tracks, Heavy Bolter, Hunter-Killer Missile, Exorcist Missile Launcher
+3x Paragon Warsuits (195 pts)
+• 1x Paragon Superior: Bolt pistol, Paragon Grenade Launchers, Paragon War Mace, Multi-melta
+• 2x Paragon Warsuit: 2 with Bolt pistol, Paragon Grenade Launchers, Paragon War Mace, Multi-melta
+  Attached to Morvenn Vahl
+5x Retributor Squad (125 pts)
+• 1x Retributor Superior: Bolt pistol, Close combat weapon, Power weapon, Inferno pistol
+• 4x Retributor: 4 with Bolt pistol, Close combat weapon, Multi-melta
+5x Seraphim Squad (75 pts)
+• 1x Seraphim Superior: Close combat weapon, Plasma pistol, Power Weapon
+• 2x Seraphim: 2 with 2x Bolt pistol, Close combat weapon
+• 2x Seraphim with Special Weapons: 2 with Close combat weapon, 2x Inferno Pistol
+
+Created with newrecruit.eu v37.6

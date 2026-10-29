@@ -1,0 +1,42 @@
++++++++++++++++++++++++++++++++++++++++++++++++
++ FACTION KEYWORD: Xenos - T'au Empire
++ DETACHMENT: Kroot Hunting Pack (Hunter's Instincts)
++ FORCE DISPOSITION: Take and Hold
++ TOTAL ARMY POINTS: 995pts
++
++ WARLORD: Char1: Commander in Coldstar Battlesuit
++ ENHANCEMENT: Borthrod Gland (on Char2: Kroot Flesh Shaper)
+& Root-carved Weapons (on Char4: Kroot War Shaper)
++ NUMBER OF UNITS: 11
++ SECONDARY: - Bring It Down: (1x2) - Assassination: 4 Characters - Cull The Horde: 1x5 (before leaders attached)
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Char1: 1x Commander in Coldstar Battlesuit (95 pts): Warlord, Shield generator, 2x Shield Drone, Cyclic ion blaster, High-output burst cannon, T'au flamer, Battlesuit fists
+Char2: 1x Kroot Flesh Shaper (60 pts): Kroot scattergun, Twin ritualistic blades
+Enhancement: Borthrod Gland (+15 pts)
+Char3: 1x Kroot Lone-spear (80 pts): Close combat weapon, Kalamandra's bite, Kroot long gun
+Char4: 1x Kroot War Shaper (70 pts): Kroot pistol, Shaper's blade, Dart-bow and tri-blade
+Enhancement: Root-carved Weapons (+10 pts)
+
+20x Kroot Carnivores (130 pts)
+• 19x Kroot Carnivore
+    2 with Close combat weapon, Tanglebomb launcher
+    17 with Close combat weapon, Kroot rifle
+• 1x Long-quill: Close combat weapon, Kroot pistol, Kroot rifle
+10x Kroot Carnivores (65 pts)
+• 9x Kroot Carnivore
+    1 with Close combat weapon, Tanglebomb launcher
+    8 with Close combat weapon, Kroot rifle
+• 1x Long-quill: Close combat weapon, Kroot pistol, Kroot rifle
+10x Kroot Carnivores (65 pts)
+• 9x Kroot Carnivore
+    1 with Close combat weapon, Tanglebomb launcher
+    8 with Close combat weapon, Kroot rifle
+• 1x Long-quill: Close combat weapon, Kroot pistol, Kroot rifle
+
+5x Kroot Hounds (45 pts): 5 with Ripping fangs
+5x Kroot Hounds (45 pts): 5 with Ripping fangs
+6x Krootox Rampagers (170 pts): 6 with Hunting blades, Kroot pistol and hunting javelins, Rampager fists
+6x Krootox Rampagers (170 pts): 6 with Hunting blades, Kroot pistol and hunting javelins, Rampager fists
+
+Created with newrecruit.eu v37.6

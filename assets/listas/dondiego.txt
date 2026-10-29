@@ -1,0 +1,45 @@
++++++++++++++++++++++++++++++++++++++++++++++++
++ FACTION KEYWORD: Xenos - Orks
++ DETACHMENT: Da Big Hunt, Green Tide (Da Hunt Is On)
++ FORCE DISPOSITION: Purge the Foe
++ TOTAL ARMY POINTS: 1000pts
++
++ WARLORD: Char2: Beastboss on Squigosaur
++ ENHANCEMENT: It Came From Da Drops (on Char2: Beastboss on Squigosaur)
+& Glory Hog (on Char3: Painboss)
++ NUMBER OF UNITS: 8
++ SECONDARY: - Bring It Down: (1x2) - Assassination: 3 Characters - Cull The Horde: 1x5 (before leaders attached)
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Char1: 1x Beastboss (85 pts): Beast Snagga Klaw and Beastchoppa, Shoota
+Leading Beast Snagga Boyz[2]
+Char2: 1x Beastboss on Squigosaur (160 pts): Warlord, Beastchoppa, Slugga, Squigosaur’s jaws, Thump Gun
+Enhancement: It Came From Da Drops (+20 pts)
+Char3: 1x Painboss (85 pts): Beast Snagga Klaw
+Enhancement: Glory Hog (+25 pts)
+Supporting Beast Snagga Boyz[1]
+
+20x Beast Snagga Boyz (160 pts)
+• 18x Beast Snagga Boy
+    16 with Choppa, Slugga
+    2 with Choppa, Slugga, Thump Gun
+• 2x Nob: 2 with Power Snappa, Slugga
+  Attached to Painboss
+10x Beast Snagga Boyz (80 pts)
+• 9x Beast Snagga Boy
+    8 with Choppa, Slugga
+    1 with Choppa, Slugga, Thump Gun
+• 1x Nob: Power Snappa, Slugga
+  Attached to Beastboss
+10x Beast Snagga Boyz (80 pts)
+• 1x Nob: Power Snappa, Slugga
+• 9x Beast Snagga Boy: 9 with Choppa, Slugga
+10x Beast Snagga Boyz (90 pts)
+• 1x Nob: Power Snappa, Slugga
+• 9x Beast Snagga Boy: 9 with Choppa, Slugga
+
+8x Squighog Boyz (260 pts)
+• 2x Nob on Smasha Squig: 2 with Big Choppa, Slugga, Squig Jaws
+• 6x Squighog Boy: 6 with Saddlegit's Shiv, Squig Jaws, Stikka
+
+Created with newrecruit.eu v37.6

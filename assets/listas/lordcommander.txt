@@ -1,0 +1,31 @@
++++++++++++++++++++++++++++++++++++++++++++++++
++ FACTION KEYWORD: Imperium - Adeptus Astartes - Blood Angels
++ DETACHMENT: Encarmine Speartip, Assault Brethren (Wrath of Angels)
++ FORCE DISPOSITION: Disruption
++ TOTAL ARMY POINTS: 995pts
++
++ WARLORD: Char2: Captain with Jump Pack
++ ENHANCEMENT: Imperium's Sword (on Char1: Captain)
+& Angelic Executioner (on Char2: Captain with Jump Pack)
++ NUMBER OF UNITS: 6
++ SECONDARY: - Bring It Down: (1x2) + (1x4) - Assassination: 2 Characters
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Char1: 1x Captain (110 pts): Imperium's Sword, Heavy Bolt Pistol, Master-crafted power weapon, Relic Shield
+Leading Bladeguard Veteran Squad
+Char2: 1x Captain with Jump Pack (110 pts): Warlord, Relic Shield, Thunder Hammer
+Enhancement: Angelic Executioner (+20 pts)
+Leading Sanguinary Guard
+
+3x Bladeguard Veteran Squad (90 pts)
+• 1x Bladeguard Veteran Sergeant: Master-crafted power weapon, Neo-volkite Pistol
+• 2x Bladeguard Veterans: 2 with Heavy Bolt Pistol, Master-crafted power weapon
+  Attached to Captain
+1x Land Raider Crusader (230 pts): Armoured Tracks, Hunter-killer missile, 2x Hurricane Bolter, Multi-melta, Storm bolter, Twin assault cannon
+1x Redemptor Dreadnought (180 pts): Icarus Rocket Pod, Redemptor Fist, Macro Plasma Incinerator, Onslaught gatling cannon, Storm Bolters
+6x Sanguinary Guard (275 pts)
+  4 with Angelus Boltgun, Encarmine Weapon
+  2 with Encarmine Weapon, Inferno pistol
+  Attached to Captain with Jump Pack
+
+Created with newrecruit.eu v37.1

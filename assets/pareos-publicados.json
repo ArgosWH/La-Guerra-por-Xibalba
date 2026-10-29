@@ -1,7 +1,62 @@
 {
-  "publicados": false,
+  "publicados": true,
   "etapa": 1,
   "ronda": 1,
   "fecha_limite": "",
-  "partidas": []
+  "partidas": [
+    {
+      "mesa": 1,
+      "jugador_a": "Overlordhobbystudio",
+      "jugador_b": "Wizard Izzet",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 2,
+      "jugador_a": "jack1989",
+      "jugador_b": "LordCommander",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 3,
+      "jugador_a": "Aristo Plays",
+      "jugador_b": "s3pt1muz",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 4,
+      "jugador_a": "Gerardo Cruz",
+      "jugador_b": "Vozzloo",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 5,
+      "jugador_a": "Pipe004",
+      "jugador_b": "DavidTheGreen",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 6,
+      "jugador_a": "DonDiego",
+      "jugador_b": "ArgosWH",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 7,
+      "jugador_a": "Infante",
+      "jugador_b": "TMONKEY",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 8,
+      "jugador_a": "Flan X Agan",
+      "jugador_b": "Carlos Orellana",
+      "resultado": "Pendiente"
+    },
+    {
+      "mesa": 9,
+      "jugador_a": "AltairVanRiessen",
+      "jugador_b": "Kristoffer Espinoza",
+      "resultado": "Pendiente"
+    }
+  ]
 }

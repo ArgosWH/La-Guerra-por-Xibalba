@@ -1,0 +1,23 @@
+Xenos - Tyranids - A la carga....ñam ñam! - [1000 pts]
+Broodlord [95 pts]:
+  • Leading: Genestealers[1]
+Broodlord [80 pts]:
+  • Leading: Genestealers[2]
+Hyperadapted Raveners [165 pts]:
+• 1x Ravener Prime
+  • Leading: Raveners
+Tyranid Prime with Lash Whip [75 pts]:
+  • Leading: Hormagaunts
+Hormagaunts [120 pts]:
+• 20x Hormagaunts
+  • Leader: Tyranid Prime with Lash Whip
+Biovores [60 pts]:
+• 1x Biovore
+Genestealers [140 pts]:
+• 10x Genestealer
+  • Leader: Broodlord[1]
+Genestealers [140 pts]:
+• 10x Genestealer
+  • Leader: Broodlord[2]
+Raveners [125 pts]:
+  • Leader: Hyperadapted Raveners

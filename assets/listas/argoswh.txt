@@ -1,0 +1,20 @@
++++++++++++++++++++++++++++++++++++++++++++++++
++ FACTION KEYWORD: Chaos - Chaos Knights
++ DETACHMENT: Houndpack Lance (Marked Prey)
++ FORCE DISPOSITION: Reconnaissance
++ TOTAL ARMY POINTS: 1000pts
++
++ WARLORD: Char1: Knight Ruinator
++ NUMBER OF UNITS: 6
++ SECONDARY: - Bring It Down: (5x2) + (1x6) - Assassination: 4 Characters
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Char1: 1x Knight Ruinator (325 pts): Warlord, Darkflame lance, Fellbore, Terrorpulse missiles
+
+Char2: 1x War Dog Brigand (135 pts): Houndpack Lance Character, Armoured feet, Avenger chaincannon, Daemonbreath spear, Havoc multi-launcher
+1x War Dog Brigand (135 pts): Armoured feet, Avenger chaincannon, Daemonbreath spear, Havoc multi-launcher
+Char3: 1x War Dog Executioner (130 pts): Houndpack Lance Character, Armoured feet, 2x War Dog autocannon, Daemonbreath meltagun
+1x War Dog Executioner (130 pts): Armoured feet, 2x War Dog autocannon, Daemonbreath meltagun
+Char4: 1x War Dog Karnivore (145 pts): Houndpack Lance Character, Reaper chaintalon, Slaughterclaw, Havoc multi-launcher
+
+Created with newrecruit.eu v37.6

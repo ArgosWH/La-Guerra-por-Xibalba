@@ -1,0 +1,74 @@
+Nibelungen (1,000 Points)
+
+Space Marines
+Space Wolves
+Saga of the Great Wolf (2 Detachment Points)
+Take and Hold
+Incursion (1,000 Points)
+
+ATTACHED UNITS
+
+Attached unit 1
+
+Chaplain in Terminator Armour (75 Points)
+  • Attached as: Leader (Character)
+  • 1x Crozius arcanum
+  • 1x Relic Shield
+
+Terminator Assault Squad (175 Points)
+  • Attached as: Bodyguard
+  • 1x Assault Terminator Sergeant
+     ◦ 1x Storm Shield
+     ◦ 1x Thunder Hammer
+  • 4x Assault Terminator
+     ◦ 4x Twin Lightning Claws
+
+Attached unit 2
+
+Logan Grimnar (150 Points)
+  • Attached as: Leader (Character)
+  • Warlord
+  • 1x Axe Morkai
+  • 1x Storm bolter
+  • 1x Tyrnak and Fenrir
+
+Wolf Guard Terminators (195 Points)
+  • Attached as: Bodyguard
+  • 1x Wolf Guard Terminator Pack Leader
+     ◦ 1x Relic Great Axe
+  • 4x Wolf Guard Terminator
+     ◦ 1x Assault Cannon
+     ◦ 3x Master-crafted power weapon
+     ◦ 1x Power fist
+     ◦ 3x Storm shield
+
+CHARACTERS
+
+Bjorn the Fell-Handed (160 Points)
+  • 1x Assault cannon
+  • 1x Heavy Flamer
+  • 1x Trueclaw
+
+BATTLELINE
+
+Heavy Intercessor Squad (115 Points)
+  • 1x Heavy Intercessor Sergeant
+     ◦ 1x Bolt pistol
+     ◦ 1x Ceramite Fists
+     ◦ 1x Heavy Bolt Rifle
+  • 4x Heavy Intercessor
+     ◦ 4x Bolt pistol
+     ◦ 4x Ceramite Fists
+     ◦ 3x Heavy Bolt Rifle
+     ◦ 1x Heavy Bolter
+
+OTHER DATASHEETS
+
+Thunderwolf Cavalry (130 Points)
+  • 3x Thunderwolf
+     ◦ 3x Boltgun
+     ◦ 3x Storm shield
+     ◦ 3x Teeth and claws
+     ◦ 3x Wolf Guard Weapon
+
+Exported with New Recruit v37.6, Data Version: v16
